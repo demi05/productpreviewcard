@@ -12,6 +12,7 @@ body {
   /*display: flex;*/
   justify-content: center;
   align-items: center;
+  max-width: 750px;
 }
 main {
   display: flex;
@@ -93,15 +94,17 @@ button:hover{
 @media screen and (min-width:250px) and (max-width:750px){
   body{
     margin: 0;
+    max-width: 400px;
   }
   .body-div{
-    max-width: 350px;
+    margin: auto;
   }
   main{
-    display: block;
+    display: grid;
     width: 90%;
     height: 90%;
     margin-top: 20px;
+    max-width: 350px;
   }
   .image {
     height: 40%;
@@ -133,7 +136,7 @@ button:hover{
     width: 100%;
   }
 }
-/*@media  screen and (min-width: 800px) and (max-width: 1500px) {
+@media  screen and (min-width: 750px) and (max-width: 1390px) {
   main {
     display: flex;
     margin: auto;
@@ -141,4 +144,4 @@ button:hover{
     width: 50%;
     justify-content: center;
   }
-}*/
+}
