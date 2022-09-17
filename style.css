@@ -12,9 +12,8 @@ body {
   display: flex;
   width: 40%;
   margin: 10em auto 0 auto;
-  min-height: 100vh;
   align-content: center;
-  /* max-width: 850px; */
+  max-width: 850px;
 }
 h1, h2{
   font-family: "Fraunces", sans-serif;
@@ -94,18 +93,16 @@ button:hover {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   main{
     width: 100%;
   }
   .container {
-    display: flex;
-    flex-direction: column;
+    display: block;
     width: 90%;
     max-width: 400px;
     margin: 2em auto;
     padding: 0;
-    justify-content: center;
   }
   .image-side {
     width: 100%;
@@ -144,7 +141,7 @@ button:hover {
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 850px){
+@media (min-width: 601px) and (max-width: 850px){
   .container {
     display: flex;
     width: 80%;
@@ -175,14 +172,13 @@ button:hover {
   }
 }
 
-@media screen and (min-width: 851px) and (max-width: 1399px){
+@media (min-width: 851px) and (max-width: 1399px){
   .container {
     display: flex;
     width: 60%;
     margin: 10em auto 0 auto;
     min-height: 100vh;
     align-content: center;
-    max-width: 900px;
   }
   .image-side {
     align-items: flex-start;
